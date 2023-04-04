@@ -1,16 +1,9 @@
 #!/usr/bin/python3
-# 1-square.py
+Rectangle = __import__('1-rectangle').Rectangle
 
-"""Define a class Square."""
+my_rectangle = Rectangle(2, 4)
+print(my_rectangle.__dict__)
 
-
-class Square:
-    """Represent a square."""
-
-    def __init__(self, size):
-        """Initialize a new Square.
-        Args:
-            size (int): The size of the new square.
-        """
-        self.__size = size
-
+my_rectangle.width = 10
+my_rectangle.height = 3
+print(my_rectangle.__dict__)
